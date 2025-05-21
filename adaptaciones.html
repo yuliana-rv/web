@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Percy Jackson</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="cuerpo">
+      <header class="banner">
+         <nav class="menu">
+           <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="universo.html">Universo</a></li>
+              <li><a href="orden.html">Libros</a></li>
+              <li><a href="adaptaciones.html">Adaptaciones</a></li>
+              <li><a href="noticias.html">Noticias</a></li>
+              <li><a href="cabañas.html">Cabañas</a></li>
+           </ul>
+         </nav><br>
+           <div class="banner-content">
+              <h1>LOS ARCHIVOS DE RIORDAN</h1> <br>
+              <h2>"Todo sobre Percy Jackson y más"</h2>        
+      </header>
+           <h1 class="subtitulo">Adaptaciones</h1>        
+             <section class="parrafo1">         
+             <p class="texto">El universo de Percy Jackson ha llegado también a la pantalla, con adaptaciones 
+              que han generado muchas opiniones entre los fans. Aquí te contamos lo más importante.</p> <br>
+              <div class="contenido-parrafo1">
+                  <p class="texto">
+                   La primera película de Percy Jackson se titula <em>"Percy Jackson y el ladrón del rayo"</em> 
+                   y se estrenó en 2010. Está basada en el primer libro de la saga. 
+                  Aunque la película presentó efectos especiales llamativos y un elenco joven, recibió críticas mixtas, 
+                  especialmente por parte de los fans del libro, ya que se tomaron muchas libertades respecto a la historia original. 
+                  A pesar de eso, ayudó a popularizar aún más el universo de Percy Jackson y atrajo a nuevos lectores a la saga.
+                Una de las principales quejas fue que se alejaba mucho del material original: cambiaron edades de los personajes, 
+                omitieron escenas importantes y alteraron elementos clave de la trama. Esto decepcionó a muchos lectores que esperaban 
+                una adaptación más fiel.</p>
+                  <img src="img/peli1.jpg" class="imagen">
+                 <br><br>
+              </div> 
+              <div class="contenido-parrafo1">
+                <img src="img/peli2.jpg" class="imagen">
+                <p class="texto">
+                  La segunda película se titula <em>"Percy Jackson y el mar de los monstruos"</em> y se estrenó en 2013.
+                  Está basada en el segundo libro de la saga. Aunque esta película intentó corregir 
+                  algunos errores de la primera, las críticas continuaron siendo mixtas o negativas. Muchos fans agradecieron 
+                  que se respetaran más elementos del libro, pero aun así hubo cambios importantes en la historia, los personajes 
+                  y el desarrollo de la trama. Algunos sintieron que la historia fue contada con prisa y que no capturaba la profundidad
+                  del libro. Desde el punto de vista comercial, la película no tuvo el éxito esperado en taquilla, y eso llevó a que la saga 
+                  cinematográfica fuera cancelada, dejando sin adaptación los siguientes libros.
+                </p>
+              </div>
+              <p class="texto">Tras el fracaso crítico y comercial de las dos películas, muchos fans quedaron decepcionados por las numerosas
+                diferencias con los libros de Rick Riordan. Sin embargo, años después, los seguidores de la saga recibieron una buena noticia: 
+                Disney+ anunció una nueva serie basada en los libros, con el apoyo directo de Rick Riordan como productor ejecutivo y co-guionista. 
+                Esta serie, titulada <em>"Percy Jackson and the Olympians"</em>, busca ser una adaptación fiel a la obra original, comenzando desde 
+                el primer libro: <em>El ladrón del rayo.</em></p> <br>
+                <div class="contenido-parrafo1">
+                  <p class="texto">
+                  La serie se estrenó en Disney+ el 20 de diciembre de 2023. 
+                  Rick Riordan, esta vez participó activamente como productor ejecutivo y guionista, algo que no ocurrió con las 
+                  películas. La primera temporada adapta el libro <em>El ladrón del rayo.</em> La serie fue muy bien recibida por los fans y la crítica, destacando su fidelidad a los libros, el 
+                  casting adecuado para la edad de los personajes, los efectos visuales y el desarrollo de la historia. El actor Walker 
+                  Scobell interpreta a Percy, acompañado por Leah Sava Jeffries como Annabeth y Aryan Simhadri como Grover.
+                  Gracias a su éxito, Disney+ confirmó una segunda temporada, que adaptará el segundo libro: <em>El mar de los monstruos.</em>
+                  <strong>Si deseas visualizar el trailer de la primera temporada, te invito a darle click a la imagen de al lado.</strong></p>
+    
+                  <img src="img/seriee.jpg" class="imagen" onclick="alternarVideo()" style="cursor:pointer;" alt="Haz clic para ver el video">                         
+            </div>                 
+           </section>
+           <div id="contenedor-video">
+      <video class="video-serie" controls>
+        <source src="videos/trailer1.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </div>
+     <footer class="pie">
+                    <p class="footertexto">Hecho para semidioses, al borde del Olimpo<br>follow me @yul.rv_</p>
+                 </footer> 
+    <script>
+    function alternarVideo() {
+      const videoContainer = document.getElementById('contenedor-video');
+      const video = videoContainer.querySelector('video');
+
+      if (videoContainer.style.display === 'none' || videoContainer.style.display === '') {
+        videoContainer.style.display = 'block';
+      } else {
+        video.pause(); // Pausa el video
+        video.currentTime = 0; // Reinicia
+        videoContainer.style.display = 'none'; // Ocultar
+      }
+    }
+  </script>       
+           </div>
+         
+          </div>
+            
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Percy Jackson</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="cuerpo">
+      <header class="banner">
+         <nav class="menu">
+           <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="universo.html">Universo</a></li>
+              <li><a href="orden.html">Libros</a></li>
+              <li><a href="adaptaciones.html">Adaptaciones</a></li>
+              <li><a href="noticias.html">Noticias</a></li>
+              <li><a href="cabañas.html">Cabañas</a></li>
+           </ul>
+         </nav><br>
+           <div class="banner-content">
+              <h1>LOS ARCHIVOS DE RIORDAN</h1> <br>
+              <h2>"Todo sobre Percy Jackson y más"</h2>        
+          </header>
+               <section class="bienvenida">
+    <h1>Bienvenido al Mundo de Percy Jackson</h1>
+    <p>
+      Look i didn't want to be a half blood... <br>
+      Si estas leyendo esto es porque crees que podrías ser uno de nosotros... un mestizo, pero recuerda, ser un semidios es peligroso. 
+      La mayor parte del tiempo solo sirve para que te maten de manera horrible y dolorosa.
+      Si eres una persona normal que cree que este es solo ficción, fantástico. Sigue leyendo y disfuta de este sitio informativo,
+      lleno de dioses, monstruos y héroes modernos. 
+    </p>
+    <div id="frase-widget" class="frase-widget">“A veces hay que salir del camino para encontrar lo que realmente importa.”</div>
+
+  </section>
+                <footer class="pie">
+                    <p class="footertexto">Hecho para semidioses, al borde del Olimpo<br>follow me @yul.rv_</p>
+                 </footer> 
+          </div>    
+    </div>
+    <script>
+  const frases = [
+    "“Incluso los héroes más fuertes necesitan ayuda a veces.”",
+    "“Sigue adelante. No te quedes en un sitio demasiado tiempo.”",
+    "“No soy nadie especial. Solo soy un chico que tuvo suerte muchas veces.”",
+    "“Estar vivo es lo que cuenta. Si tienes un propósito, entonces tienes una oportunidad.”",
+    "“Ser un semidios no significa que seas invencible. Solo significa que eres lo suficientemente valiente para levantarte y hacer lo que se necesita.”",
+  ];
+
+  const fraseWidget = document.getElementById('frase-widget');
+  let indice = 0;
+
+  function cambiarFrase() {
+    fraseWidget.style.opacity = 0;
+    setTimeout(() => {
+      indice = (indice + 1) % frases.length;
+      fraseWidget.textContent = frases[indice];
+      fraseWidget.style.opacity = 1;
+    }, 600);
+  }
+
+  setInterval(cambiarFrase, 5000);
+</script>
+
+</body>
+</html>
